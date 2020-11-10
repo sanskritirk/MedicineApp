@@ -36,7 +36,6 @@ export default class AddDataScreen extends React.Component{
         return(
             <View style = {{flex:1}}>
             <MyHeader title="ADD MEDICINE" navigation ={this.props.navigation}/>
-            <KeyboardAvoidingView style={styles.keyBoardStyle}>
             <TextInput style = {styles.inputBox}
             placeholder = {'Medicine Name'}
             onChangeText={(text)=>{
@@ -76,7 +75,6 @@ export default class AddDataScreen extends React.Component{
             <TouchableOpacity style = {styles.button} onPress={()=>{this.submitData()}}>
             <Text style = {styles.buttonText}>ADD</Text>
             </TouchableOpacity>
-            </KeyboardAvoidingView>
             </View>
         )
     }
